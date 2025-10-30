@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2f3a2f;
+  line-height: 1.7;
+  background: #faf8f4;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 10;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.navbar .logo {
+  font-weight: 700;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #2f3a2f;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  color: #417d2c;
+}
+
+/* Hero section */
+.hero {
+  height: 100vh;
+  background: url("static/farm.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Sections */
+.section {
+  padding: 6rem 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section.alt {
+  background: #f1ede8;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.img-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.img-grid img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #e8e3dc;
+  margin-top: 2rem;
+}
+
+/* Scroll animation */
+.shrink {
+  transform: scale(1);
+}
